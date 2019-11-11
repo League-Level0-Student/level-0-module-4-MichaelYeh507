@@ -22,11 +22,11 @@ public class SleepyHead {
         System.out.println("result from entry " + weekday);
         if(weekday==1) {
         isWeekday = true;
-        JOptionPane.showMessageDialog(null, "are you asleep?");
+		JOptionPane.showMessageDialog(null, "Thats too bad");
         }
         else if(weekday==0) {
 		isWeekday = false;
-		JOptionPane.showMessageDialog(null, "Thats too bad");
+        JOptionPane.showMessageDialog(null, "are you asleep?");
 		}
 /* System.out.println(contactServerUp); */
 }
