@@ -23,7 +23,8 @@ void draw() {
       println("X: " + mouseX + " Y: " + mouseY); 
 
       // If the mouse is on Waldo, print “Waldo found!”
-      if(mouseX == 51 && mouseY == 305) {
+      //rect(51, 305, 50, 50);
+      if((mouseX >= 30 && mouseX <= 70) && (mouseY >=280 && mouseY <=310)) {
       System.out.println("Waldo Found");
       playWoohoo();
       } else if (mousePressed == true) {
