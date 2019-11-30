@@ -29,23 +29,26 @@ public class OwnAdventure {
 				JOptionPane.showMessageDialog(null, "You see a nether portal and a door that says exit");
 				int portals = JOptionPane.showOptionDialog(null, "Which way would you go?", "Title", 0, JOptionPane.INFORMATION_MESSAGE, null,
 				new String[] { "Nether", "exit" }, null);
+				
+				//Game end
 				if (portals == 1) {
 					JOptionPane.showMessageDialog(null, "You past the forest! Congrats!");
 				} else {
+					//fail
 					JOptionPane.showMessageDialog(null, "You spawned in lava");
 					JOptionPane.showMessageDialog(null, "You died GG");
 				}
 				
 				
 			} else {
-				// Take D L
+				// fail
 				JOptionPane.showMessageDialog(null, "You took the jetpack and started flying across the river");
 				JOptionPane.showMessageDialog(null, "You did not see that the jetpack was low on fuel");
 				JOptionPane.showMessageDialog(null, "You fall into the river and drowned GG");
 			}
 			
 		} else {
-			//TAKE D L
+			//fail
 			JOptionPane.showMessageDialog(null, "You got in an elevator and the door closed");
 			JOptionPane.showMessageDialog(null, "Suddenly, creepy spiders starts crawling out of the openings on the roof!");
 			JOptionPane.showMessageDialog(null, "You got eaten buy spiders GG");
